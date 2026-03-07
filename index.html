@@ -101,6 +101,8 @@ cursor:pointer;
 
 transition:.3s;
 
+font-weight:bold;
+
 }
 
 .cta button:hover{
@@ -191,7 +193,7 @@ margin-top:10px;
 
 }
 
-/* FORMULARIO (único blanco) */
+/* FORMULARIO */
 
 .form-section{
 
@@ -254,6 +256,34 @@ transition:.3s;
 button.submit:hover{
 
 background:#1d4ed8;
+
+}
+
+/* BOTON WHATSAPP */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+background:#25D366;
+
+color:white;
+
+padding:16px 22px;
+
+border-radius:50px;
+
+font-size:16px;
+
+text-decoration:none;
+
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+z-index:1000;
 
 }
 
@@ -415,9 +445,11 @@ Déjanos tu correo y te contactaremos para agendar
 tu análisis de marketing sin costo.
 </p>
 
-<form>
+<form action="https://formsubmit.co/eloisa.santana.cruz@gmail.com" method="POST">
 
-<input type="email" placeholder="Tu correo electrónico" required>
+<input type="email" name="email" placeholder="Tu correo electrónico" required>
+
+<input type="hidden" name="_captcha" value="false">
 
 <button class="submit">
 Quiero mi sesión
@@ -429,5 +461,16 @@ Quiero mi sesión
 
 </div>
 
+<!-- BOTON WHATSAPP -->
+
+<a class="whatsapp" 
+href="https://wa.me/527291348968?text=Hola%20quiero%20agendar%20mi%20análisis%20de%20marketing" 
+target="_blank">
+
+WhatsApp
+
+</a>
+
 </body>
 </html>
+
